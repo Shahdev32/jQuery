@@ -1,20 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JQuery</title>
-    <link rel="styleshet" href="styles.css" >
+  <meta charset="UTF-8" />
+  <title>jQuery Demo</title>
 
+  <!-- jQuery CDN (IMPORTANT) -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+    }
+
+    #box {
+      width: 200px;
+      height: 200px;
+      background-color: skyblue;
+      margin-top: 20px;
+      display: none; /* hidden initially */
+    }
+  </style>
 </head>
 <body>
-        <h1>Learning JQuery</h1>
-        <button>Click Me</button>
-        <button>Click Me</button>
-        <button>Click Me</button>
-        <button>Click Me</button>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="index.js"></script>
-    
+
+  <h2>jQuery Example</h2>
+
+  <!-- Button -->
+  <button id="showBtn">Show Box</button>
+  <button id="hideBtn">Hide Box</button>
+
+  <!-- Box -->
+  <div id="box"></div>
+
+  <!-- Our jQuery file -->
+  <script src="index.js"></script>
 </body>
 </html>
